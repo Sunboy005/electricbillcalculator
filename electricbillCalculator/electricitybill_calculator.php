@@ -10,7 +10,11 @@
         }else{
             $bill = (($units - 250) * 6.50 )+ (100 * 5.20) + (100 * 4.00) + (50 * 3.50);
         }
-        echo $bill;
+        echo '
+            <div class="bg-light text-center">  
+                <h2 class="text-primary">Your bill is:<span class="text-danger text-right">  &#8358;'.number_format($bill,2).'</span></h2>
+            </div>';
+                
     }
 
 ?>
